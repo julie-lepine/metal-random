@@ -1,0 +1,28 @@
+body {
+    background-color: lightgrey;
+    padding: 2%;
+}
+
+header, footer {
+    background-color: darkgrey;
+    margin: 0 0 2% 0;
+    height: 10vh;
+    font-variant: small-caps;
+}
+
+header ul li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+main {
+    margin: 2%;
+    padding: 2%;
+    border: 1px dotted darkgrey;
+    text-align: center;
+}
+
+#idea {
+    color: red;
+}

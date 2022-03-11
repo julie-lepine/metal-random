@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Which song should you listen to ?</title>
+</head>
+
+<body>
+    <header class="d-flex flex-column align-items-center justify-content-center">
+        <ul class="menu">
+            <li class="title">
+                <h1>Randomize - </h1>
+                <h2> Find your next favourite song</h2>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <!--<p id="para">Some text here</p>
+        <button onclick="changeColor('blue');">blue</button>
+        <button onclick="changeColor('red');">red</button>-->
+        <h3>You should listen to: </h3>
+        <p id="idea"></p>
+        <p id="image"></p>
+        <a href="/index.html"><button class="btn btn-outline-primary">Reload the page for more FUN</button></a>
+    </main>
+
+    <footer class="d-flex justify-content-around align-items-center">
+        <div class="copyright">
+            <p class="text-dark m-0">By <a href="https://www.linkedin.com/in/julie-lepine/" target="_blank"
+                    class="text-decoration-none text-black">July</a> <img src="./img/flower.png" height="18" alt="flower">,
+                2022.</p>
+        </div>
+    </footer>
+</body>
+<script>
+    /* asking about the mood*/
+    var mood = prompt('Hello, what\'s your mood today?', 'bossy, tired, dynamic, happy, sad or angry?'); 
+
+    if (mood === 'bossy') {
+        document.getElementById('idea').innerHTML = 'You Better Work - Ru Paul';
+        document.getElementById('image').innerHTML += "<img src='./img/bossy.jpg'/>"; 
+    } else if (mood === 'tired') {
+        document.getElementById('idea').innerHTML = 'Frühling in Paris - Rammstein';
+        document.getElementById('image').innerHTML += "<img src='./img/tired.jpg'/>"; 
+    } else if (mood === 'dynamic') {
+        document.getElementById('idea').innerHTML = 'Hero - Bonnie Tyler';
+        document.getElementById('image').innerHTML += "<img src='./img/dynamic.jpg'/>"; 
+    } else if (mood === 'happy') {
+        document.getElementById('idea').innerHTML = 'Last Resort - Papa Roach';
+                document.getElementById('image').innerHTML += "<img src='./img/happy.jpg'/>"; 
+    } else if (mood === 'sad') {
+        document.getElementById('idea').innerHTML = 'Bring me to Life - Evanescence';
+                document.getElementById('image').innerHTML += "<img src='./img/sad.jpg'/>"; 
+    } else if (mood === 'angry') {
+        document.getElementById('idea').innerHTML = 'To the Hellfire - Lorna Shore';
+                document.getElementById('image').innerHTML += "<img src='./img/angry.jpg'/>"; 
+    } else {
+        document.getElementById('idea').innerHTML = 'Vous n\'avez pas indiqué un des mots proposés, sorry';
+    }
+
+</script>
+<script src="./bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

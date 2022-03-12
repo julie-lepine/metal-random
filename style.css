@@ -6,7 +6,6 @@ body {
 header, footer {
     background-color: darkgrey;
     margin: 0 0 2% 0;
-    height: 10vh;
     font-variant: small-caps;
 }
 
@@ -14,6 +13,7 @@ header ul li {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 2%;
 }
 
 main {
@@ -21,8 +21,32 @@ main {
     padding: 2%;
     border: 1px dotted darkgrey;
     text-align: center;
+    height: auto;
 }
 
 #idea {
     color: red;
+}
+
+#idea::before, #idea::after {
+    background-image: url(./img/party.png);
+    background-size: 20px 20px;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+}
+
+footer {
+    height: 10vh;
+}
+
+/**** RESPONSIVE *****/
+@media screen and (max-width: 750px) {
+
+}
+
+@media screen and (max-width: 425px) {
+    header ul li {
+        flex-direction: column;
 }

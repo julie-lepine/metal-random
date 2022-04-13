@@ -18,10 +18,9 @@
     <header>
         <ul class="p-0">
             <li class="d-flex justify-content-evenly align-items-center">
-                <h1>Randomize</h1>
                 <div class="text-center">
-                    <h2>Trouve ta nouvelle chanson préférée</h2>
-                    <h3>but metal </h3>
+                    <h1>Trouve ta nouvelle chanson préférée</h1>
+                    <h2>but metal </h2>
                 </div>
             </li>
         </ul>
@@ -30,10 +29,10 @@
     <main class="d-flex justify-content-around flex-column ">
         <div>
             <h3>Tu devrais écouter : </h3>
-            <p id="idea"></p>
-            <p id="image"></p>
+            <div id="idea" class="mb-2"></div>
+            <div id="image" class="mt-2"></div>
         </div>
-        <a href="index.html"><button class="btn btn-outline-primary">Recharger la page pour + de FUNN</button></a>
+        <a href="index.html"><button type="button" class="btn btn-outline-primary mt-2" id="recharge">Recharger la page pour + de FUNN</button></a>
     </main>
 
     <footer class="d-flex justify-content-around align-items-center">
@@ -44,48 +43,8 @@
                 2022.</p>
         </div>
     </footer>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script>
-    /* asking about the mood */
-    var mood = prompt('Hello, comment te sens-tu aujourd\hui? : concentré, sombre, fatigué, fou, frenchie, dynamique, angélique, heureux, triste ou énervé? (!! respecter la casse)');
-
-    if (mood === 'concentré') {
-        /* ici ça aurait pû être document.body.innerHTML */
-        document.getElementById('idea').innerHTML = 'The Eagle Flies Alone - Arch Enemy';
-        document.getElementById('image').innerHTML += "<img src='./img/bossy.jpg' alt='chat-concentré'/>";
-    } else if (mood === 'angélique') {
-        document.getElementById('idea').innerHTML = 'What About Us - Within Temptation ft. Tarja';
-        document.getElementById('image').innerHTML += "<img src='./img/fairy-cat.png' alt='chat-angélique'/>";
-    } else if (mood === 'fou') {
-        document.getElementById('idea').innerHTML = 'Je Collectionne des Canards (Vivants) - Ultra Vomit';
-        document.getElementById('image').innerHTML += "<img src='./img/crazy-cat.jpg' alt='chat-fou'/>";
-    } else if (mood === 'frenchie') {
-        document.getElementById('idea').innerHTML = 'Furia - Mass Hysteria';
-        document.getElementById('image').innerHTML += "<img src='./img/frenchie-cat.jpg' alt='frenchie-cat'/>";
-    } else if (mood === 'fatigué') {
-        document.getElementById('idea').innerHTML = 'Klavier - Rammstein';
-        document.getElementById('image').innerHTML += "<img src='./img/tired.jpg' alt='chat-fatigué'/>";
-    } else if (mood === 'sombre') {
-        document.getElementById('idea').innerHTML = 'Priest of Sodom - Cannibal Corpse';
-        document.getElementById('image').innerHTML += "<img src='./img/metal-cat.jpg' alt='chat-sombre'/>";
-    } else if (mood === 'dynamique') {
-        document.getElementById('idea').innerHTML = 'All My Friends Are Dead - Turbonegro';
-        document.getElementById('image').innerHTML += "<img src='./img/dynamic.jpg' alt='chat-dynamique'/>";
-    } else if (mood === 'heureux') {
-        document.getElementById('idea').innerHTML = 'Last Resort - Papa Roach';
-        document.getElementById('image').innerHTML += "<img src='./img/happy.jpg' alt='chat-heureux'/>";
-    } else if (mood === 'triste') {
-        document.getElementById('idea').innerHTML = 'Roulette - System Of A Down';
-        document.getElementById('image').innerHTML += "<img src='./img/sad.jpg' alt='chat-triste'/>";
-    } else if (mood === 'énervé') {
-        document.getElementById('idea').innerHTML = 'To the Hellfire - Lorna Shore';
-        document.getElementById('image').innerHTML += "<img src='./img/angry.jpg' alt='chat-énervé'/>";
-    } else {
-        document.getElementById('idea').innerHTML = 'Vous n\'avez pas indiqué un des mots proposés, sorry';
-        document.getElementById('image').innerHTML += "<img src='./img/bowie.jpg' alt='bowie-mon-chat'/>";
-    }
-
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>
